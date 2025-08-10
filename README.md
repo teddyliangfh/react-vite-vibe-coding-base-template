@@ -1,6 +1,6 @@
 # React Vite TypeScript Template
 
-A modern, production-ready React template built with Vite and TypeScript. This template provides a solid foundation for building scalable React applications with support for multiple package managers.
+A modern, production-ready React template built with Vite and TypeScript. This template provides a solid foundation for building scalable React applications.
 
 [![Template](https://img.shields.io/badge/Template-React%20%2B%20Vite%20%2B%20TypeScript-blue?style=for-the-badge&logo=react)](https://github.com/yourusername/react-vite-vibe-coding-base-template/generate)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -20,7 +20,6 @@ cd react-vite-vibe-coding-base-template
 - ⚛️ **React 19** - Latest React with modern features
 - 🔷 **TypeScript** - Full type safety and better developer experience
 - 🎨 **Modern CSS** - Clean, responsive design with CSS modules support
-- 📦 **Multi-Package Manager Support** - npm, yarn, and pnpm
 - 🛠️ **ESLint** - Code quality and consistency
 - 📱 **Responsive Design** - Mobile-first approach
 - ♿ **Accessibility** - Built with accessibility in mind
@@ -29,56 +28,16 @@ cd react-vite-vibe-coding-base-template
 ## 📋 Prerequisites
 
 - Node.js >= 18.0.0
-- npm >= 8.0.0 or yarn >= 1.22.0 or pnpm >= 8.0.0
+- npm >= 8.0.0
 
 ## 🎯 Getting Started
 
-### 1. Choose Your Package Manager
-
-This template supports three package managers. **Choose one** and remove the others:
-
-#### Quick Setup (Recommended)
 ```bash
-# Run the cleanup script to automatically remove unwanted files
-./scripts/cleanup.sh
-```
-
-#### Manual Setup
-
-##### Option A: npm (Recommended for beginners)
-```bash
-# Remove yarn and pnpm files
-rm .yarnrc.yml pnpm-lock.yaml
-
 # Install dependencies
 npm install
 
 # Start development server
 npm run dev
-```
-
-##### Option B: yarn
-```bash
-# Remove npm and pnpm files
-rm .npmrc pnpm-lock.yaml
-
-# Install dependencies
-yarn install
-
-# Start development server
-yarn dev
-```
-
-##### Option C: pnpm (Recommended for performance)
-```bash
-# Remove npm and yarn files
-rm .npmrc .yarnrc.yml
-
-# Install dependencies
-pnpm install
-
-# Start development server
-pnpm dev
 ```
 
 ## 🛠️ Available Scripts
@@ -144,18 +103,11 @@ export function MyComponent({ title, className = '' }: MyComponentProps) {
 
 ## 🔧 Configuration Files
 
-### Package Manager Specific
-
-- **npm**: `.npmrc` - npm configuration
-- **yarn**: `.yarnrc.yml` - yarn configuration
-- **pnpm**: `pnpm-lock.yaml` - pnpm lock file
-
-### Build & Development
-
 - `vite.config.ts` - Vite configuration
 - `tsconfig.json` - TypeScript configuration
 - `eslint.config.js` - ESLint configuration
 - `.gitignore` - Git ignore rules
+- `.npmrc` - npm configuration
 
 ## 🚀 Deployment
 
@@ -176,44 +128,9 @@ The build output will be in the `dist/` directory, ready for deployment to any s
 
 ## 📦 Adding Dependencies
 
-### With npm
 ```bash
 npm install package-name
 npm install -D package-name  # dev dependency
-```
-
-### With yarn
-```bash
-yarn add package-name
-yarn add -D package-name     # dev dependency
-```
-
-### With pnpm
-```bash
-pnpm add package-name
-pnpm add -D package-name     # dev dependency
-```
-
-## 🧹 Cleanup Instructions
-
-After choosing your package manager, clean up the project:
-
-### For npm users:
-```bash
-rm .yarnrc.yml pnpm-lock.yaml
-# Update package.json: remove "packageManager" field
-```
-
-### For yarn users:
-```bash
-rm .npmrc pnpm-lock.yaml
-# Update package.json: remove "packageManager" field
-```
-
-### For pnpm users:
-```bash
-rm .npmrc .yarnrc.yml
-# Keep pnpm-lock.yaml and packageManager field
 ```
 
 ## 🔍 Development Tips
@@ -275,6 +192,5 @@ This is a GitHub template repository. To use it:
 
 **Note**: When using this template, remember to:
 - Update the repository URL in this README
-- Choose your preferred package manager and clean up accordingly
 - Customize the project name and description
 - Add your own features and components

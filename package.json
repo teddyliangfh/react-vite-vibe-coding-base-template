@@ -5,11 +5,8 @@
   "type": "module",
   "engines": {
     "node": ">=18.0.0",
-    "npm": ">=8.0.0",
-    "yarn": ">=1.22.0",
-    "pnpm": ">=8.0.0"
+    "npm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.15.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -18,7 +15,6 @@
     "preview": "vite preview",
     "type-check": "tsc --noEmit",
     "clean": "rm -rf dist node_modules",
-    "install:all": "npm install && yarn install && pnpm install",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "dependencies": {
