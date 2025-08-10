@@ -108,9 +108,6 @@ Thumbs.db
 *.sln
 *.sw?
 
-# Cursor
-.cursor/
-
 # TypeScript
 *.tsbuildinfo
 
